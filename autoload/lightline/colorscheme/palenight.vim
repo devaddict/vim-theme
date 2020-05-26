@@ -17,10 +17,12 @@ let s:p_dark_yellow = ["#F78C6C", 173, 11]
 let s:p_cyan = ["#89DDFF", 38, 6]
 let s:p_comment_grey = ["#697098", 59, 15]
 let s:p_black = ["#292D3E", 235, 0]
+let s:p_transparent = ["NONE", "NONE", "NONE"]
 
 let s:p.normal.left     = [ [ s:p_black, s:p_purple ], [ s:p_purple, s:p_menu_grey ] ]
 let s:p.normal.right    = copy(s:p.normal.left)
-let s:p.normal.middle   = [ [ s:p_comment_grey, s:p_black ] ]
+" let s:p.normal.middle   = [ [ s:p_comment_grey, s:p_black ] ]
+let s:p.normal.middle   = [ [ s:p_comment_grey, s:p_transparent ] ]
 let s:p.normal.warning  = [ [ s:p_black, s:p_yellow ] ]
 let s:p.normal.error    = [ [ s:p_black, s:p_red ] ]
 
